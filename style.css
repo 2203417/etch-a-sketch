@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(248, 244, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    min-height: 100vh;
+}
+
+.settings{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    width: 480px;
+    height: 480px;
+    background: white;
+    border: 2px solid #c7c1c1;
+
+}
+
+.cell{
+    background-color: white;
+     border: 1px solid rgba(0,0,0,0.08); /* borde tenue */
+}
