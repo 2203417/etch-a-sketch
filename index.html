@@ -8,21 +8,51 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="title">MrChickenChu</h1>
+        <h1 class="title">etch a sketch</h1>
+
+
+            <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+            <svg viewBox="0 0 24 24" width="22" height="22">
+            <path fill="currentColor"
+             d="M21 12.79A9 9 0 0111.21 3 7 7 0 0012 17a7 7 0 009-4.21z"/>
+            </svg>
+    </button>
+
     </header>
 
-    <div class="settings"> Settings here
-        <input type="color" id="colorPicker" value="#6d6969">
-        <button id="colorMode">Color Mode</button>
-        <button id="crazyMode">CrazyMode!</button>
-        <button id="eraser">Eraser</button>
-        <button id="clear">Clear</button>
-        <button id="size">Size</button>
+    <div class="home">
+
+        <div class="settings"> Settings here
+            <input type="color" id="colorPicker" value="#6d6969">
+            <button id="colorMode">Color Mode</button>
+            <button id="crazyMode">CrazyMode!</button>
+            <button id="eraser">Eraser</button>
+            <button id="clear">Clear</button>
+            <label class="size-label">
+                Grid size: <span id="sizeValue">16</span> x <span id="sizeValue2">16</span>
+            </label>
+
+            <input 
+            type="range" 
+            id="sizeSlider" 
+            min="4" 
+            max="64" 
+            value="16"
+            />
+
+        </div>
+        
+        <div class="container"></div>
+        
     </div>
 
-    <div class="container"></div>
-
-    
+    <footer class="footer">  <p>
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear())
+        </script>
+        MrChickenChu
+      </p></footer>
 
 <script src="script.js"></script>
 </body>
